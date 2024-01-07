@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfoilo</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+        <div class="section">
+            <div class="section-img">
+                <img src="images/profile.jpg" alt="">
+            </div>
+            <div class="section-details">
+                <h4>Hello , I'm</h4>
+                <h1>PAVAN KUMAR KASA</h1>
+                <h2>WEB DEVELOPER</h2>
+                <div class="section-btn">
+                    <a href="files/Resumeword1.pdf" download><button class="btn-download">Download CV</button></a>
+                    <a href="#contact"><button class="btn-contact">Contact Info</button></a>
+                </div>
+            </div>
+        </div>
+    <%- include("partials/body.ejs") %>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

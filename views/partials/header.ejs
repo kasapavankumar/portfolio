@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+    <header class="header-section">
+        <h1>PAVANS PORTFOLIO</h1>
+        <ul class="header-ul">
+            <li class="header-li"><a href="/"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li class="header-li"><a href="/about"><i class="fa-solid fa-user"></i>About</a></li>
+            <li class="header-li"><a href="/project"><i class="fa-solid fa-laptop-code"></i>Projects</a></li>
+            <li class="header-li"><a href="/resume"><i class="fa-solid fa-file"></i>Resume</a></li>
+            <a href="https://github.com/kasapavankumar" style="color: blue;"><button class="header-btn"><i class="fa-solid fa-code-branch"></i><i class="fa-solid fa-star"></i></button></a>
+        </ul>
+        <div class="menu">
+            <a href=""><i class="fa-solid fa-bars" id="nav-menu"></i></a>
+        </div>
+    </header>
+    <script>
+        const menu=document.querySelector(".menu");
+        const menuSymbol=document.querySelector("#nav-menu");
+        const navbar=document.querySelector(".header-ul");
+        menu.addEventListener("click",()=>{
+            if(navbar.classList.contains('active')){
+                menuSymbol.className='fa-solid fa-bars'
+                navbar.classList.remove('active')
+            }else{
+                navbar.classList.add('active')
+                menuSymbol.className='fa-solid fa-xmark'
+            }
+        })
+    </script>
+</body>
+</html>

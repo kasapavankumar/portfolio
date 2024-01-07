@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    background-image: url(./images/backgroungimg\ -\ Copy.jpg);
+    font-family: 'Inter', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.resume-container{
+    margin: 0px 40px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    min-height: 100vh;
+}
+.resume-btn{
+    width: 160px;
+    height: 50px;
+    background-color: navy;
+    color: white;
+    font-size: 20px;
+    border-radius: 40px;
+    border: none;
+}
+.resume-btn:hover{
+    transform: scale(1.04);
+}
+.resume-btn a{
+    text-decoration: none;
+    color: white;
+}
+.resume-file{
+    width: 100%;
+    height: 1200px;
+    margin-bottom: 40px;
+}
+/* scroll bar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: rgb(187, 215, 227);
+}
+::-webkit-scrollbar-thumb{
+    background: navy;
+    border-radius: 30px;
+}
+@media (max-width:768px) {
+    .resume-file{
+        height: 800px;
+    }
+    .resume-file iframe{
+        height: 800px;
+    }
+}
+@media (max-width:576px) {
+    .resume-file{
+        height: 600px;
+    }
+    .resume-file iframe{
+        height: 600px;
+    }
+}
+@media (max-width:426px) {
+    .resume-file{
+        height: 400px;
+    }
+    .resume-file iframe{
+        height: 400px;
+    }
+}
+@media (max-width:376px) {
+    .resume-file{
+        height: 350px;
+    }
+    .resume-file iframe{
+        height: 350px;
+    }
+}
+@media (max-width:321px) {
+    .resume-file{
+        height: 300px;
+    }
+    .resume-file iframe{
+        height: 300px;
+    }
+}
+

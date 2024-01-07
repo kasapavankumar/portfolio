@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    margin: 0;
+    color: black;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    /* padding: 0px 40px; */
+    padding-left: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(10px);
+   
+    z-index: 2;
+}
+.header-ul a{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    gap: 5px;
+}
+
+h1{
+    font-weight: 700;
+    letter-spacing: 2;
+}
+.header-li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 19px;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.header-li::before{
+    content: "";
+    left: 50%;
+    bottom: -3px;
+    height: 4px;
+    width: 0;
+    background-color: navy;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+.header-li:hover::before{
+    content: "";
+    left: 0;
+    bottom: -3px;
+    height: 4px;
+    width: 100%;
+    background-color: navy;
+    position: absolute;
+}
+.header-btn{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(54, 54, 244);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.2s linear;
+    color: white;
+}
+.header-btn:hover{
+    transform: scale(1.1);  
+}
+.header-ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+.menu{
+    font-size: 30px;
+    display: none;
+}
+@media (max-width:1024px) {
+    .header-ul{
+        margin-right: 30px;
+    }
+}
+@media (max-width:768px) {
+    h1{
+        font-size: 1.5rem;
+    }
+    .header-li{
+        font-size: 17px;
+        gap: 10px;
+    }
+    .header-btn{
+        width: 50px;
+        height: 30px;
+    }
+    .header-ul{
+        margin-right: 50px;
+        padding-left: 20px;
+    }
+} 
+@media (max-width:576px) {
+    h1{
+        font-size: 1.3rem;
+    }
+    .header-ul{
+        position: fixed;
+        right: -999px;
+        top: 55px;
+        flex-direction: column;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 80vh;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: 0.3s;
+        background-color:#264653;
+        margin-right: 0px;
+    }
+    .header-ul.active{
+        right: 0;
+    }
+    .header-li{
+        font-size: 19px;
+        gap: 10px;
+    }
+    .menu{
+        display: block;
+        padding-right: 40px;
+    }
+    .header-ul a{
+        color: white;
+        font-weight: 600;
+    }
+}

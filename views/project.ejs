@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <div class="project-container">
+        <div class="project-content">
+            <h1><span style="color: navy;">Academic</span> Project</h1>
+            <div class="academic-card">
+                <div class="academic-img">
+                    <img src="images/circuit-project.png" alt="" width="280px" height="200px">
+                    <img src="images/project.png" alt="" width="280px" height="200px">
+                </div>
+                <h4>GAS LEAKAGE DETECTION AND AUTOMATIC POWER CONTROL</h4>
+                <div class="academic-content">
+                    
+                    <ul class="academic-ul">
+                        <li class="academic-li">Designed and implemented a comprehensive gas leakage detection and prevention system aimed at enhancing safety and 
+                            preventing potential damages caused by LPG gas leaks. 
+                            The system integrates various components to detect gas, alert nearby individuals, and take preventive measures.</li>
+                        <li class="academic-li">Integrated MQ2 gas sensor to accurately detect gas concentrations, providing real-time monitoring.
+                            Implemented a robust alert system utilizing a buzzer to generate audible warnings and a SIM900A GSM module to send SMS alerts ("Gas Leakage Detected") for immediate notification.
+                            Engineered an automatic door opening mechanism using a solenoid lock, motor drive, and gear wheel to ensure rapid evacuation in the event of a gas leak.
+                            Integrated safety measures, including the tripping of the power supply using an MCB to minimize the risk of explosion or fire.
+                            Conducted thorough testing and calibration to validate the system's functionality and responsiveness to gas leakage scenarios.
+                        </li>
+                        <li class="academic-li">Technologies Used : MQ2 Gas Sensor,Buzzer,SIM900A GSM Module,Solenoid Lock,Motor Drive and Gear Wheel,
+                            MCB (Miniature Circuit Breaker),Microcontroller (Arduino)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="project-content">
+            <h1 class="recent-h1">My Recent <span style="color: navy;">Works</span></h1>
+            <p class="recent-p">Here are a few projects I've worked on recently</p>
+            <div class="project-cards">
+                <div class="project-card">
+                    <img src="images/portfolio.png" alt="portfolio website image" width="380px" height="200px">
+                    <h4>Portfolio</h4>
+                    <p>Designed and developed a comprehensive personal portfolio website to showcase my skills, 
+                        projects, and professional background. The project was built 
+                        using a combination of EJS (Embedded JavaScript), Node.js, 
+                        Express.js, and JavaScript.</p>
+                    <div class="project-btn">
+                        <button class="demo-btn">Github</button>
+                        <button class="demo-btn">Demo</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/touristwebsite.png" alt="portfolio website image" width="380px" height="200px">
+                    <h4>Travelia</h4>
+                    <p>Conceptualized, designed, and implemented a dynamic tourist website to provide comprehensive information on various tourist destinations. 
+                        Leveraged frontend technologies, including HTML, CSS, and 
+                        JavaScript, to deliver an engaging user experience.</p>
+                    <div class="project-btn">
+                        <button class="demo-btn"><a href="https://github.com/kasapavankumar/TouristWebsite">Github</a></button>
+                        <button class="demo-btn"><a href="https://kasapavankumar.github.io/TouristWebsite/#">Demo</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>
