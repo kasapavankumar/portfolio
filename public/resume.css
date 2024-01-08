@@ -8,7 +8,7 @@ body{
 }
 .resume-container{
     margin: 0px 40px;
-    padding-top: 100px;
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
     gap: 20px;
