@@ -208,6 +208,9 @@ h4{
         width: 290px;
     }
     .academic-img{
-        justify-content: unset;
+        justify-content: center;
+    }
+    .project-container{
+        width: 215px;
     }
 }

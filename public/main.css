@@ -15,7 +15,7 @@ body{
     height: 60vh;
     display: flex;
     margin: 0px 40px;
-    margin-bottom: 160px;
+    margin-bottom: 0px;
     padding-top: 220px;
     justify-content: center;
     align-items: center;
@@ -100,7 +100,8 @@ body{
 }
 @media (max-width:1441px) {
     .section{
-        margin-bottom: 100px;
+        margin-bottom: 0px;
+        gap: 20px;
     }
 }
 
@@ -123,7 +124,7 @@ body{
         gap: 40px;
         width: 500px;
         padding-top: 120px;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
     }
     .section img{
         height: 200px;
@@ -144,10 +145,10 @@ body{
 @media (max-width:426px){
     .section{
         padding-left: 0px;
-        width: 380px;
+        width: 375px;
         gap: 20px;
         padding-top: 100px; 
-        margin-bottom: 100px; 
+        margin-bottom: 0px; 
     }
     .section-details{
         justify-content: flex-start;
@@ -182,7 +183,7 @@ body{
         padding-left: 0px;
         width: 320px;
         padding-top: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .section-details h4{
         font-size: 15px;
@@ -203,9 +204,9 @@ body{
 }
 @media (max-width:321px) {
     .section{
-        width: 290px;
+        width: 250px;
         padding-top: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
     }
     .section-details h1{
         font-size: 1.5rem;
